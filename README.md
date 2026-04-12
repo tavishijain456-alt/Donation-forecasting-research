@@ -9,9 +9,13 @@ periods to enable proactive NGO resource planning.
 3. DOMAIN
 
 • Artificial Intelligence & Machine Learning
+
 • Time-Series Forecasting (Univariate & Multivariate)
+
 • Deep Learning (LSTM, Temporal Fusion Transformer)
+
 • Social Welfare Technology & NGO Operations Research
+
 This project bridges technical ML modelling with real-world social welfare applications, specifically food
 donation management and operational forecasting for non-profit organizations.
 
@@ -22,7 +26,12 @@ future donation trends for community food assistance programs. The core contribu
 anomaly-aware, multivariate forecasting framework that not only predicts donation volume but
 specifically identifies upcoming donation drought periods — enabling NGOs to act before shortages
 occur. The model will help organizations:
+
 • Plan food kit procurement with statistically grounded forecasts
+
 • Detect and prepare for donation droughts in advance
+
 • Reduce operational uncertainty across fundraising cycles
+
 • Make data-driven inventory and resource allocation decisions
+
