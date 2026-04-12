@@ -1,9 +1,13 @@
 # Donation-forecasting-research
-1. Niche
+
+1. NICHE
+   
 Donation forecasting for community food assistance systems using a comparative framework of classical,
 machine learning, and deep learning time-series models — with a focus on predicting donation shortfall
 periods to enable proactive NGO resource planning.
-2. Domain
+
+3. DOMAIN
+
 • Artificial Intelligence & Machine Learning
 • Time-Series Forecasting (Univariate & Multivariate)
 • Deep Learning (LSTM, Temporal Fusion Transformer)
@@ -11,7 +15,8 @@ periods to enable proactive NGO resource planning.
 This project bridges technical ML modelling with real-world social welfare applications, specifically food
 donation management and operational forecasting for non-profit organizations.
 
-4. Research Objective
+3. RESEEARCH OBJECTIVE
+   
 This research aims to develop and compare multiple time-series machine learning models to predict
 future donation trends for community food assistance programs. The core contribution is an
 anomaly-aware, multivariate forecasting framework that not only predicts donation volume but
