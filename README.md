@@ -16,7 +16,7 @@ detection framework for proactive NGO procurement planning.
 | ETS (Holt-Winters) | 12,396.26 | 11,175.29 | 18.52 |
 | Prophet + Holidays | 14,811.52 | 11,286.44 | 16.15 |
 | **XGBoost** | **16,364.50** | **13,418.58** | **13.81 ✓** |
-| LSTM | — | — | — |
+| LSTM | 36231.84 | 27450.21 | 31.46 |
 
 **XGBoost achieved the best MAPE of 13.81%**, outperforming the ARIMA baseline by 12.65 percentage points.
 
