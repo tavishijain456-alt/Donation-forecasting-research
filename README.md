@@ -19,7 +19,7 @@ periods to enable proactive NGO resource planning.
 This project bridges technical ML modelling with real-world social welfare applications, specifically food
 donation management and operational forecasting for non-profit organizations.
 
-3. RESEEARCH OBJECTIVE
+3. RESEARCH OBJECTIVE
    
 This research aims to develop and compare multiple time-series machine learning models to predict
 future donation trends for community food assistance programs. The core contribution is an
