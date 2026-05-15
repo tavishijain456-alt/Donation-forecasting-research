@@ -1,37 +1,62 @@
-# Donation-forecasting-research
+# Donation Forecasting Using Time Series ML Models
 
-1. NICHE
-   
-Donation forecasting for community food assistance systems using a comparative framework of classical,
-machine learning, and deep learning time-series models — with a focus on predicting donation shortfall
-periods to enable proactive NGO resource planning.
+A comparative ML research project evaluating five forecasting models for predicting
+donation volume in community food assistance programs, with a donation drought
+detection framework for proactive NGO procurement planning.
 
-3. DOMAIN
+**Author:** Tavishi Jain | CS + Applied Maths | R&D Department, College Tech Society
 
-• Artificial Intelligence & Machine Learning
+---
 
-• Time-Series Forecasting (Univariate & Multivariate)
+## Key Results
 
-• Deep Learning (LSTM, Temporal Fusion Transformer)
+| Model | RMSE ($) | MAE ($) | MAPE (%) |
+|---|---|---|---|
+| ARIMA | 25,445.61 | 19,981.86 | 26.46 |
+| ETS (Holt-Winters) | 12,396.26 | 11,175.29 | 18.52 |
+| Prophet + Holidays | 14,811.52 | 11,286.44 | 16.15 |
+| **XGBoost** | **16,364.50** | **13,418.58** | **13.81 ✓** |
+| LSTM | — | — | — |
 
-• Social Welfare Technology & NGO Operations Research
+**XGBoost achieved the best MAPE of 13.81%**, outperforming the ARIMA baseline by 12.65 percentage points.
 
-This project bridges technical ML modelling with real-world social welfare applications, specifically food
-donation management and operational forecasting for non-profit organizations.
+---
 
-3. RESEARCH OBJECTIVE
-   
-This research aims to develop and compare multiple time-series machine learning models to predict
-future donation trends for community food assistance programs. The core contribution is an
-anomaly-aware, multivariate forecasting framework that not only predicts donation volume but
-specifically identifies upcoming donation drought periods — enabling NGOs to act before shortages
-occur. The model will help organizations:
+## What This Project Does
 
-• Plan food kit procurement with statistically grounded forecasts
+- Compares 5 forecasting model families end-to-end: ARIMA, ETS, Prophet, XGBoost, LSTM
+- Tests whether Indian cultural holiday covariates improve forecast accuracy (RQ2)
+- Builds a **donation drought detection framework** — flags months where forecast drops below 70% of the 8-month rolling average, giving NGOs advance warning of shortfalls (RQ3)
+- Full research paper written in LaTeX (Overleaf)
 
-• Detect and prepare for donation droughts in advance
+---
 
-• Reduce operational uncertainty across fundraising cycles
+## Notebooks
 
-• Make data-driven inventory and resource allocation decisions
+| # | Notebook | What it covers |
+|---|---|---|
+| 01 | `01_donation_eda.ipynb` | Data loading, cleaning, STL decomposition, ACF/PACF, descriptive stats |
+| 02 | `02_arima_ets.ipynb` | ARIMA (auto_arima), ETS (Holt-Winters), residual analysis, confidence intervals |
+| 03 | `03_prophet.ipynb` | Prophet baseline, Indian holiday covariates, cross-validation, custom seasonality |
+| 04 | `04_xgboost.ipynb` | Feature engineering, XGBoost, hyperparameter tuning, feature importance |
+| 05 | `05_lstm.ipynb` | PyTorch LSTM, sequence modelling, hyperparameter sensitivity, multivariate variant |
+| 06 | `06_drought_stats.ipynb` | All-model comparison, drought detection framework, Wilcoxon significance test |
+
+---
+
+## How to Run
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn statsmodels pmdarima prophet xgboost torch jupyterlab
+```
+
+Open notebooks in order (01 → 06) in VS Code or JupyterLab. Each notebook is self-contained with its own data loading cell.
+
+**Dataset:** Superstore Sales — [Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+
+---
+
+## Tech Stack
+
+Python · Pandas · NumPy · Matplotlib · Seaborn · Statsmodels · pmdarima · Prophet · XGBoost · PyTorch · scikit-learn · LaTeX (Overleaf)
 
